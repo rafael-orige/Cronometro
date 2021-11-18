@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cronômetro</title>
+</head>
+<body>
+    <div class="stopwatch">
+        <div class="stopwatch--screen">
+            <div class="stopwatch--screenText">
+                <div class="stopwatch--screenTime">
+                    <div class="stopwatch--time count">00:00:00</div>
+                </div>
+                <div class="stopwatch--screenStatus">idle</div>
+            </div>
+        </div>
+
+        <div class="side-button--main" onclick="btnStart()">
+            <div class="side-button">
+            </div>
+            <div class="button-border"></div>
+        </div>
+
+        <div class="stopwatch--buttons">
+            <button class="stopwatch--startButton" onclick="start()">start</button>
+            <button class="stopwatch--resetButton" onclick="reset()">reset</button>
+            <button class="stopwatch--stopButton" onclick="stop()">stop</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
